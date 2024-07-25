@@ -32,3 +32,5 @@ app.use('/user',userRouter)
 app.use('/task',taskRouter)
 
 app.listen(port,()=>console.log(`server running on ${port}`))
+
+module.exports=app
