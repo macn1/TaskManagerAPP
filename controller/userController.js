@@ -39,11 +39,13 @@ const login = async(req,res)=>{
     try {
 
         const {email,password} = req.body
-        console.log(req.body);
+        console.log(email);
 
         const userExist = await User.findOne({email})
 
         console.log("int the route");
+
+
 
         console.log(userExist,"hello");
         
