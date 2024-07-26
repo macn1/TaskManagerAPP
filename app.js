@@ -12,6 +12,10 @@ const app = express()
 const db = require('./db/db')
 
 app.use(cors())
+
+
+
+
 app.use(bodyParser.json());
 
 

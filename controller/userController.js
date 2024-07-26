@@ -43,8 +43,12 @@ const login = async(req,res)=>{
 
         const userExist = await User.findOne({email})
 
+        console.log("int the route");
+
         
         if (userExist) {
+
+            
 
             const isMatch = await userExist.comparePassword(password)
 
