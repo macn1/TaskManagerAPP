@@ -66,6 +66,7 @@ const login = async(req,res)=>{
             res.json({status:'true',token:token})
             
         }
+        console.log("log");
 
         
     } catch (error) {
