@@ -45,6 +45,7 @@ const login = async(req,res)=>{
 
         console.log("int the route");
 
+        console.log(userExist,"hello");
         
         if (userExist) {
 
