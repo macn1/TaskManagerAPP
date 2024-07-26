@@ -43,11 +43,7 @@ const login = async(req,res)=>{
 
         const userExist = await User.findOne({email})
 
-        console.log("int the route");
-
-
-
-        console.log(userExist,"hello");
+       
         
         if (userExist) {
 
@@ -68,8 +64,10 @@ const login = async(req,res)=>{
 
             res.json({status:'true',token:token})
             
+        }else{
+            return res.status(400).json({error:"user doesnt exist"})
         }
-        console.log("log");
+        
 
         
     } catch (error) {
